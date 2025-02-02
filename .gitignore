@@ -2,3 +2,4 @@ res/
 dist/
 test/
 nbproject/private/
+/build/

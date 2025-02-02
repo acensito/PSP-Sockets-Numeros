@@ -8,10 +8,10 @@ Por cada cliente que se conecte, el servidor creará un hilo dedicado para gesti
 ## Funcionalidades del Cliente  
 El cliente podrá elegir entre las siguientes opciones:  
 
-- **Almacenar un número en un archivo:**  
-  - Se guardará en un archivo de texto llamado `numeros.txt`.  
-  - El formato de almacenamiento será: `NombreCliente: Número`
-    - **Ejemplo:** `C3: 4`  
+- [x] **Almacenar un número en un archivo:**  
+  - Se guardará en un archivo de texto llamado `lista.txt`.  
+  - El formato de almacenamiento será: `NombreCliente:Número`
+    - **Ejemplo:** `manolito:4`  
 
 - **Consultar el número total de registros almacenados.**  
 - **Obtener la lista completa de números almacenados.**  
