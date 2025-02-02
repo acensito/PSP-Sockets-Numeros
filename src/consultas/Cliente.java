@@ -44,11 +44,17 @@ public class Cliente extends Thread {
                         //mandamos el numero generado en el formato establecido
                         out.writeUTF(usuario+":"+numero);
                     }
-                    case 2 -> {System.out.println("holi 2");
+                    case 2 -> {
+                        //leemos el resultado y mostramos mensaje en pantalla
+                        System.out.println("Hay " + in.readInt() + " números");
                     }
-                    case 3 -> {System.out.println("holi 3");
+                    case 3 -> {
+                        //mostramos el listado de números
+                        System.out.println("Numeros almacenados: "+in.readUTF());
                     }
-                    case 4 -> {System.out.println("holi 4");
+                    case 4 -> {
+                        //mostramos la cantidad almacenada del usuario
+                        System.out.println("Cantidad de numeros de "+usuario+": "+in.readInt());
                     }
                     case 5 -> {System.out.println("holi 5");
                     }
@@ -58,6 +64,7 @@ public class Cliente extends Thread {
             }
             
         } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
     
